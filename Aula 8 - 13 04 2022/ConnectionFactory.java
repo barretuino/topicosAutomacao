@@ -1,10 +1,9 @@
 package br.unisal.ibarreto.jdbc;
 /**
-. * Projeto de Gerência.
- * Disciplina: 21845- SISTEMAS INFORMAÇÃO GERÊNCIA TELECOMUNICAÇÕES
+.* Projeto de Gerência.
  * ConnectionFactory - Fábrica de Conexões com o Banco
- * @autor Paulo C. Barreto / Luiz R. Barreto
- * @date 26/05/2012
+ * @autor Paulo C. Barreto
+ * @date 13/04/2022
  */
 
 import java.sql.Connection;
