@@ -14,7 +14,7 @@ public class ConnectionFactory {
 	public static Connection getConnection() throws SQLException {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://localhost/unisal","paulo","12345679");
+			return DriverManager.getConnection("jdbc:mysql://192.168.33.26/unisal","paulo","12345679");
 		} catch (ClassNotFoundException e) {
 			throw new SQLException(e.getMessage());
 		}
