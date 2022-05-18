@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>		
+		<title>Projeto Arduino</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="http://127.0.0.1:8080/Demos/styles.css" rel="stylesheet" />
+		<script src="http://127.0.0.1:8080/Demos/js/jquery-1.9.1.min.js"></script>
+		<script src="http://127.0.0.1:8080/Demos/js/knockout-2.2.1.js"></script>
+		<script src="http://127.0.0.1:8080/Demos/js/globalize.min.js"></script>
+		<script src="http://127.0.0.1:8080/Demos/js/dx.chartjs.js"></script>
+                                      
+	</head>
+	<body>
+		<script type="text/javascript">
+			function grafico(valor)  
+				{
+				var d=document.formBotoes; //Vai pegar o formulario e adicionar em uma variavél
+				var valor = d.medida.value;
+				var menor = d.menor.value;
+				var maior = d.maior.value;
+   $("#chartContainer").dxCircularGauge({
+	scale: {
+		startValue: 0,
+		endValue: 100,
+		majorTick: {
+			tickInterval: 10
+		}
+	},
+
+	rangeContainer: {
+		backgroundColor: "none",
+		ranges: [
+			{
+				startValue: 0,
+				endValue: 33,
+				color: "#A6C567"
+			},
+			{
+				startValue: 33,
+				endValue: 66,
+				color: "#FCBB69"
+			},
+			{
+				startValue: 66,
+				endValue: 100,
+				color: "#E19094"
+			}
+		]
+	},
+
+	needles: [{value: valor}],
+
+	markers: [{value: menor}, { value: maior}]
+});
+}
+		</script>
+		
+		</div>
+		<div class="line"></div>		
+		<div class="title">
+			<h1>Projeto Arduino</h1>&nbsp;&nbsp;&nbsp;<h2>Medidas de Luminosidade</h2>
+			
+		</div>
+		<form name="formBotoes">
+			<center>
+				<input type="text" name="medida" size="4">
+				<input type="text" name="menor" size="4">
+				<input type="text" name="maior" size="4">
+				<input type="button" value="Atualizar" onClick="grafico()">
+			</center>
+		</form>
+		<div class="content">
+			<div class="pane">
+				<div class="long-title"><h3></h3></div>
+				<div id="chartContainer" style="width: 100%; height: 440px;"></div>
+				<div class="credits"></div>
+			</div>
+		</div>
+		
+	</body>
+</html>
