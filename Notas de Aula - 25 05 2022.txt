@@ -1,0 +1,31 @@
+Notas de Aula 25/05/2022 - Revisão para a Atividade Avaliativa
+
+1. Hierárquia de Automação - Pirâmide de Automação
+
+    Recobramos conceitos fundamentais sobre o papel de cada camada.
+    A comunicação entre camadas Física, Controle e Monitoramento
+
+    Integração com camadas de persistência de dados e ação de IHM - Interface Homem Máquina
+
+2. Sistemas SCADA
+
+    Os sistemas supervisórios são conhecidos como SCADA. Os sistemas SCADA são os sistemas de supervisão de processos industriais que coletam dados do processo através de remotas industriais, principalmente Controladores Lógico Programáveis, formatam estes dados, e os apresentam ao operador em uma multiplicidade de formas. 
+
+    O objetivo principal dos sistemas SCADA é propiciar uma
+    interface de alto nível do operador com o processo informando-o "em tempo real" de todos os eventos de importância da planta.
+
+    Com o uso de ferramentas especializadas estas informações dos controladores industriais são atualizadas continuamente e podem ser guardadas em bancos de dados locais ou remotos para fins de registros histórico.
+
+    O Sistema Supervisório veio para reduzir a dimensão dos painéis sinóticos e melhorar a interface homem/máquina. É um software destinado a promover a interface homem/máquina, afim de proporcionar uma supervisão plena do processo, através de telas devidamente configuradas.
+
+3. Conectividade Arduino x Aplicação
+
+4. Aplicação com Banco de Dados
+    
+    Sistema de Controle e Aquisição de Dados.
+    
+    1. Driver JDBC
+	2. Aplicações Desktop --> Serial
+	3. Aplicações Web <-- Banco de Dados <-- Aplicação 
+
+5. Aplicação com Ehernet Shield
